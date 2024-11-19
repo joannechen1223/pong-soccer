@@ -1,0 +1,79 @@
+[0.000000] (-) TimerEvent: {}
+[0.001334] (bump_n_go_pkg) JobQueued: {'identifier': 'bump_n_go_pkg', 'dependencies': OrderedDict()}
+[0.003235] (bump_n_go_pkg) JobStarted: {'identifier': 'bump_n_go_pkg'}
+[0.099560] (-) TimerEvent: {}
+[0.200232] (-) TimerEvent: {}
+[0.300987] (-) TimerEvent: {}
+[0.401662] (-) TimerEvent: {}
+[0.502349] (-) TimerEvent: {}
+[0.603032] (-) TimerEvent: {}
+[0.703670] (-) TimerEvent: {}
+[0.804354] (-) TimerEvent: {}
+[0.905063] (-) TimerEvent: {}
+[1.005702] (-) TimerEvent: {}
+[1.106371] (-) TimerEvent: {}
+[1.207031] (-) TimerEvent: {}
+[1.307668] (-) TimerEvent: {}
+[1.408455] (-) TimerEvent: {}
+[1.511387] (-) TimerEvent: {}
+[1.611984] (-) TimerEvent: {}
+[1.712669] (-) TimerEvent: {}
+[1.813410] (-) TimerEvent: {}
+[1.914168] (-) TimerEvent: {}
+[2.014831] (-) TimerEvent: {}
+[2.115503] (-) TimerEvent: {}
+[2.216215] (-) TimerEvent: {}
+[2.316978] (-) TimerEvent: {}
+[2.417643] (-) TimerEvent: {}
+[2.518335] (-) TimerEvent: {}
+[2.619075] (-) TimerEvent: {}
+[2.719767] (-) TimerEvent: {}
+[2.820524] (-) TimerEvent: {}
+[2.921298] (-) TimerEvent: {}
+[3.022329] (-) TimerEvent: {}
+[3.123032] (-) TimerEvent: {}
+[3.223809] (-) TimerEvent: {}
+[3.325006] (-) TimerEvent: {}
+[3.381217] (bump_n_go_pkg) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/bump_n_go_pkg', 'build', '--build-base', '/home/ubuntu/lab-2-robot-control-architecture-mmw/ros2_ws/build/bump_n_go_pkg/build', 'install', '--record', '/home/ubuntu/lab-2-robot-control-architecture-mmw/ros2_ws/build/bump_n_go_pkg/install.log', '--single-version-externally-managed'], 'cwd': '/home/ubuntu/lab-2-robot-control-architecture-mmw/ros2_ws/src/bump_n_go_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'WORKSPACE_SETUP': '/opt/ros/humble/setup.bash', 'USER': 'ubuntu', 'SSH_CLIENT': '128.84.91.46 53470 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/home/ubuntu/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/ubuntu', 'CYCLONEDDS_URI': '/etc/turtlebot4/cyclonedds_rpi.xml', 'OLDPWD': '/home/ubuntu/lab-2-robot-control-architecture-mmw', 'TERM_PROGRAM_VERSION': '1.92.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-74454948-e044-4d41-8c71-e97a71894389.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/ubuntu/lab-2-robot-control-architecture-mmw/ros2_ws/install', 'ROBOT_SETUP': '/etc/turtlebot4/setup.bash', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/ubuntu/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'FASTRTPS_DEFAULT_PROFILES_FILE': '/etc/turtlebot4/fastdds_discovery_super_client.xml', 'TURTLEBOT4_DIAGNOSTICS': '1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'C.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-31406a4c43.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/ubuntu/lab-2-robot-control-architecture-mmw/ros2_ws/install/bump_n_go_pkg:/opt/ros/humble', 'SHELL': '/bin/bash', 'ROS_DISCOVERY_SERVER': '127.0.0.1:11811', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'ROBOT_NAMESPACE': '', 'PWD': '/home/ubuntu/lab-2-robot-control-architecture-mmw/ros2_ws/build/bump_n_go_pkg', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '128.84.91.46 53470 10.52.16.30 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/lab-2-robot-control-architecture-mmw/ros2_ws/build/bump_n_go_pkg/prefix_override:/home/ubuntu/lab-2-robot-control-architecture-mmw/ros2_ws/install/bump_n_go_pkg/lib/python3.10/site-packages:/home/ubuntu/lab-2-robot-control-architecture-mmw/ros2_ws/install/bump_n_go_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[3.425310] (-) TimerEvent: {}
+[3.527263] (-) TimerEvent: {}
+[3.627930] (-) TimerEvent: {}
+[3.728642] (-) TimerEvent: {}
+[3.829500] (-) TimerEvent: {}
+[3.930352] (-) TimerEvent: {}
+[4.031650] (-) TimerEvent: {}
+[4.133303] (-) TimerEvent: {}
+[4.234922] (-) TimerEvent: {}
+[4.336042] (-) TimerEvent: {}
+[4.437241] (-) TimerEvent: {}
+[4.538315] (-) TimerEvent: {}
+[4.639473] (-) TimerEvent: {}
+[4.642483] (bump_n_go_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[4.645422] (bump_n_go_pkg) StdoutLine: {'line': b'writing ../../build/bump_n_go_pkg/bump_n_go_pkg.egg-info/PKG-INFO\n'}
+[4.646718] (bump_n_go_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/bump_n_go_pkg/bump_n_go_pkg.egg-info/dependency_links.txt\n'}
+[4.647903] (bump_n_go_pkg) StdoutLine: {'line': b'writing entry points to ../../build/bump_n_go_pkg/bump_n_go_pkg.egg-info/entry_points.txt\n'}
+[4.650092] (bump_n_go_pkg) StdoutLine: {'line': b'writing requirements to ../../build/bump_n_go_pkg/bump_n_go_pkg.egg-info/requires.txt\n'}
+[4.650822] (bump_n_go_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/bump_n_go_pkg/bump_n_go_pkg.egg-info/top_level.txt\n'}
+[4.658038] (bump_n_go_pkg) StdoutLine: {'line': b"reading manifest file '../../build/bump_n_go_pkg/bump_n_go_pkg.egg-info/SOURCES.txt'\n"}
+[4.659465] (bump_n_go_pkg) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[4.662742] (bump_n_go_pkg) StdoutLine: {'line': b"writing manifest file '../../build/bump_n_go_pkg/bump_n_go_pkg.egg-info/SOURCES.txt'\n"}
+[4.663661] (bump_n_go_pkg) StdoutLine: {'line': b'running build\n'}
+[4.664398] (bump_n_go_pkg) StdoutLine: {'line': b'running build_py\n'}
+[4.665127] (bump_n_go_pkg) StdoutLine: {'line': b'copying bump_n_go_pkg/bump_n_go_node.py -> /home/ubuntu/lab-2-robot-control-architecture-mmw/ros2_ws/build/bump_n_go_pkg/build/lib/bump_n_go_pkg\n'}
+[4.666055] (bump_n_go_pkg) StdoutLine: {'line': b'running install\n'}
+[4.670417] (bump_n_go_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[4.672385] (bump_n_go_pkg) StdoutLine: {'line': b'copying /home/ubuntu/lab-2-robot-control-architecture-mmw/ros2_ws/build/bump_n_go_pkg/build/lib/bump_n_go_pkg/bump_n_go_node.py -> /home/ubuntu/lab-2-robot-control-architecture-mmw/ros2_ws/install/bump_n_go_pkg/lib/python3.10/site-packages/bump_n_go_pkg\n'}
+[4.678648] (bump_n_go_pkg) StdoutLine: {'line': b'byte-compiling /home/ubuntu/lab-2-robot-control-architecture-mmw/ros2_ws/install/bump_n_go_pkg/lib/python3.10/site-packages/bump_n_go_pkg/bump_n_go_node.py to bump_n_go_node.cpython-310.pyc\n'}
+[4.684267] (bump_n_go_pkg) StdoutLine: {'line': b'running install_data\n'}
+[4.685694] (bump_n_go_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.695058] (bump_n_go_pkg) StdoutLine: {'line': b"removing '/home/ubuntu/lab-2-robot-control-architecture-mmw/ros2_ws/install/bump_n_go_pkg/lib/python3.10/site-packages/bump_n_go_pkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[4.699443] (bump_n_go_pkg) StdoutLine: {'line': b'Copying ../../build/bump_n_go_pkg/bump_n_go_pkg.egg-info to /home/ubuntu/lab-2-robot-control-architecture-mmw/ros2_ws/install/bump_n_go_pkg/lib/python3.10/site-packages/bump_n_go_pkg-0.0.0-py3.10.egg-info\n'}
+[4.704440] (bump_n_go_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[4.739661] (-) TimerEvent: {}
+[4.785227] (bump_n_go_pkg) StdoutLine: {'line': b'Installing bump_n_go_node script to /home/ubuntu/lab-2-robot-control-architecture-mmw/ros2_ws/install/bump_n_go_pkg/lib/bump_n_go_pkg\n'}
+[4.787072] (bump_n_go_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/ubuntu/lab-2-robot-control-architecture-mmw/ros2_ws/build/bump_n_go_pkg/install.log'\n"}
+[4.839897] (-) TimerEvent: {}
+[4.937704] (bump_n_go_pkg) CommandEnded: {'returncode': 0}
+[4.941294] (-) TimerEvent: {}
+[5.029796] (bump_n_go_pkg) JobEnded: {'identifier': 'bump_n_go_pkg', 'rc': 0}
+[5.034843] (-) EventReactorShutdown: {}

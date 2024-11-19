@@ -1,0 +1,22 @@
+[3.128s] Invoking command in '/home/ubuntu/lab-2-robot-control-architecture-mmw/ros2_ws/src/bump_n_go_pkg': PYTHONPATH=/home/ubuntu/lab-2-robot-control-architecture-mmw/ros2_ws/build/bump_n_go_pkg/prefix_override:/home/ubuntu/lab-2-robot-control-architecture-mmw/ros2_ws/install/bump_n_go_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/bump_n_go_pkg build --build-base /home/ubuntu/lab-2-robot-control-architecture-mmw/ros2_ws/build/bump_n_go_pkg/build install --record /home/ubuntu/lab-2-robot-control-architecture-mmw/ros2_ws/build/bump_n_go_pkg/install.log --single-version-externally-managed
+[4.330s] running egg_info
+[4.337s] writing ../../build/bump_n_go_pkg/bump_n_go_pkg.egg-info/PKG-INFO
+[4.340s] writing dependency_links to ../../build/bump_n_go_pkg/bump_n_go_pkg.egg-info/dependency_links.txt
+[4.340s] writing entry points to ../../build/bump_n_go_pkg/bump_n_go_pkg.egg-info/entry_points.txt
+[4.340s] writing requirements to ../../build/bump_n_go_pkg/bump_n_go_pkg.egg-info/requires.txt
+[4.341s] writing top-level names to ../../build/bump_n_go_pkg/bump_n_go_pkg.egg-info/top_level.txt
+[4.346s] reading manifest file '../../build/bump_n_go_pkg/bump_n_go_pkg.egg-info/SOURCES.txt'
+[4.348s] adding license file 'LICENSE'
+[4.352s] writing manifest file '../../build/bump_n_go_pkg/bump_n_go_pkg.egg-info/SOURCES.txt'
+[4.353s] running build
+[4.353s] running build_py
+[4.356s] running install
+[4.357s] running install_lib
+[4.361s] running install_data
+[4.369s] running install_egg_info
+[4.374s] removing '/home/ubuntu/lab-2-robot-control-architecture-mmw/ros2_ws/install/bump_n_go_pkg/lib/python3.10/site-packages/bump_n_go_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[4.376s] Copying ../../build/bump_n_go_pkg/bump_n_go_pkg.egg-info to /home/ubuntu/lab-2-robot-control-architecture-mmw/ros2_ws/install/bump_n_go_pkg/lib/python3.10/site-packages/bump_n_go_pkg-0.0.0-py3.10.egg-info
+[4.383s] running install_scripts
+[4.469s] Installing bump_n_go_node script to /home/ubuntu/lab-2-robot-control-architecture-mmw/ros2_ws/install/bump_n_go_pkg/lib/bump_n_go_pkg
+[4.470s] writing list of installed files to '/home/ubuntu/lab-2-robot-control-architecture-mmw/ros2_ws/build/bump_n_go_pkg/install.log'
+[4.608s] Invoked command in '/home/ubuntu/lab-2-robot-control-architecture-mmw/ros2_ws/src/bump_n_go_pkg' returned '0': PYTHONPATH=/home/ubuntu/lab-2-robot-control-architecture-mmw/ros2_ws/build/bump_n_go_pkg/prefix_override:/home/ubuntu/lab-2-robot-control-architecture-mmw/ros2_ws/install/bump_n_go_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/bump_n_go_pkg build --build-base /home/ubuntu/lab-2-robot-control-architecture-mmw/ros2_ws/build/bump_n_go_pkg/build install --record /home/ubuntu/lab-2-robot-control-architecture-mmw/ros2_ws/build/bump_n_go_pkg/install.log --single-version-externally-managed

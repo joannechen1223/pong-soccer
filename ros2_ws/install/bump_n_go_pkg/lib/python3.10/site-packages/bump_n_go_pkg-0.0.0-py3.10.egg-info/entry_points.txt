@@ -1,0 +1,3 @@
+[console_scripts]
+bump_n_go_node = bump_n_go_pkg.bump_n_go_node:main
+
