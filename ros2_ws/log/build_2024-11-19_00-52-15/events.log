@@ -1,0 +1,132 @@
+[0.000000] (-) TimerEvent: {}
+[0.002638] (pong_soccer_pkg) JobQueued: {'identifier': 'pong_soccer_pkg', 'dependencies': OrderedDict()}
+[0.003425] (robot_control_architecture_pkg) JobQueued: {'identifier': 'robot_control_architecture_pkg', 'dependencies': OrderedDict()}
+[0.004159] (pong_soccer_pkg) JobStarted: {'identifier': 'pong_soccer_pkg'}
+[0.054887] (robot_control_architecture_pkg) JobStarted: {'identifier': 'robot_control_architecture_pkg'}
+[0.099025] (-) TimerEvent: {}
+[0.201733] (-) TimerEvent: {}
+[0.303600] (-) TimerEvent: {}
+[0.414401] (-) TimerEvent: {}
+[0.517043] (-) TimerEvent: {}
+[0.621706] (-) TimerEvent: {}
+[0.722540] (-) TimerEvent: {}
+[0.823713] (-) TimerEvent: {}
+[0.924618] (-) TimerEvent: {}
+[1.027775] (-) TimerEvent: {}
+[1.129874] (-) TimerEvent: {}
+[1.233733] (-) TimerEvent: {}
+[1.334908] (-) TimerEvent: {}
+[1.436450] (-) TimerEvent: {}
+[1.537230] (-) TimerEvent: {}
+[1.638035] (-) TimerEvent: {}
+[1.739056] (-) TimerEvent: {}
+[1.839903] (-) TimerEvent: {}
+[1.940923] (-) TimerEvent: {}
+[2.042228] (-) TimerEvent: {}
+[2.143092] (-) TimerEvent: {}
+[2.244017] (-) TimerEvent: {}
+[2.344989] (-) TimerEvent: {}
+[2.445739] (-) TimerEvent: {}
+[2.546495] (-) TimerEvent: {}
+[2.647187] (-) TimerEvent: {}
+[2.747979] (-) TimerEvent: {}
+[2.849016] (-) TimerEvent: {}
+[2.949784] (-) TimerEvent: {}
+[3.050550] (-) TimerEvent: {}
+[3.151264] (-) TimerEvent: {}
+[3.251977] (-) TimerEvent: {}
+[3.352773] (-) TimerEvent: {}
+[3.453815] (-) TimerEvent: {}
+[3.557537] (-) TimerEvent: {}
+[3.658824] (-) TimerEvent: {}
+[3.762047] (-) TimerEvent: {}
+[3.862807] (-) TimerEvent: {}
+[3.964565] (-) TimerEvent: {}
+[4.067342] (-) TimerEvent: {}
+[4.168439] (-) TimerEvent: {}
+[4.269182] (-) TimerEvent: {}
+[4.370099] (-) TimerEvent: {}
+[4.470916] (-) TimerEvent: {}
+[4.571641] (-) TimerEvent: {}
+[4.672463] (-) TimerEvent: {}
+[4.776579] (-) TimerEvent: {}
+[4.877511] (-) TimerEvent: {}
+[4.978785] (-) TimerEvent: {}
+[5.079546] (-) TimerEvent: {}
+[5.180553] (-) TimerEvent: {}
+[5.282732] (-) TimerEvent: {}
+[5.383705] (-) TimerEvent: {}
+[5.484502] (-) TimerEvent: {}
+[5.586235] (-) TimerEvent: {}
+[5.687734] (-) TimerEvent: {}
+[5.790769] (-) TimerEvent: {}
+[5.896757] (-) TimerEvent: {}
+[5.981637] (robot_control_architecture_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/robot_control_architecture_pkg', 'build', '--build-base', '/home/ubuntu/pong-soccer/ros2_ws/build/robot_control_architecture_pkg/build', 'install', '--record', '/home/ubuntu/pong-soccer/ros2_ws/build/robot_control_architecture_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ubuntu/pong-soccer/ros2_ws/src/robot_control_architecture_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'WORKSPACE_SETUP': '/opt/ros/humble/setup.bash', 'USER': 'ubuntu', 'SSH_CLIENT': '128.84.91.25 53808 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/ubuntu/pong-soccer/ros2_ws/install/audio_common_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/home/ubuntu/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/ubuntu', 'CYCLONEDDS_URI': '/etc/turtlebot4/cyclonedds_rpi.xml', 'OLDPWD': '/home/ubuntu/pong-soccer', 'TERM_PROGRAM_VERSION': '1.92.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-d51e25fb-5876-44af-bf0b-0235d830a432.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/ubuntu/pong-soccer/ros2_ws/install', 'ROBOT_SETUP': '/etc/turtlebot4/setup.bash', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ubuntu', 'IGN_GAZEBO_MODEL_PATH': '/opt/ros/humble/share', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '9', 'GAZEBO_MODEL_PATH': '/opt/ros/humble/share', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/ubuntu/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'FASTRTPS_DEFAULT_PROFILES_FILE': '/etc/turtlebot4/fastdds_discovery_super_client.xml', 'TURTLEBOT4_DIAGNOSTICS': '1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'C.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-59422d384c.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg:/home/ubuntu/pong-soccer/ros2_ws/install/tts_ros:/home/ubuntu/pong-soccer/ros2_ws/install/robot_control_architecture_pkg:/home/ubuntu/pong-soccer/ros2_ws/install/bump_n_go_pkg:/home/ubuntu/pong-soccer/ros2_ws/install/audio_common:/home/ubuntu/pong-soccer/ros2_ws/install/audio_common_msgs:/opt/ros/humble', 'SHELL': '/bin/bash', 'ROS_DISCOVERY_SERVER': '127.0.0.1:11811', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/humble/share', 'GAZEBO_RESOURCE_PATH': '/opt/ros/humble/share', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'ROBOT_NAMESPACE': '', 'PWD': '/home/ubuntu/pong-soccer/ros2_ws/build/robot_control_architecture_pkg', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '128.84.91.25 53808 10.52.16.27 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/pong-soccer/ros2_ws/build/robot_control_architecture_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/pong-soccer/ros2_ws/install/robot_control_architecture_pkg/lib/python3.10/site-packages:/home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/lib/python3.10/site-packages:/home/ubuntu/pong-soccer/ros2_ws/install/tts_ros/local/lib/python3.10/dist-packages:/home/ubuntu/pong-soccer/ros2_ws/install/robot_control_architecture_pkg/lib/python3.10/site-packages:/home/ubuntu/pong-soccer/ros2_ws/install/bump_n_go_pkg/lib/python3.10/site-packages:/home/ubuntu/pong-soccer/ros2_ws/install/audio_common/local/lib/python3.10/dist-packages:/home/ubuntu/pong-soccer/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/pong-soccer/ros2_ws/install/tts_ros:/home/ubuntu/pong-soccer/ros2_ws/install/audio_common:/home/ubuntu/pong-soccer/ros2_ws/install/audio_common_msgs'}, 'shell': False}
+[5.997047] (-) TimerEvent: {}
+[6.007674] (pong_soccer_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/pong_soccer_pkg', 'build', '--build-base', '/home/ubuntu/pong-soccer/ros2_ws/build/pong_soccer_pkg/build', 'install', '--record', '/home/ubuntu/pong-soccer/ros2_ws/build/pong_soccer_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ubuntu/pong-soccer/ros2_ws/src/pong_soccer_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'WORKSPACE_SETUP': '/opt/ros/humble/setup.bash', 'USER': 'ubuntu', 'SSH_CLIENT': '128.84.91.25 53808 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/ubuntu/pong-soccer/ros2_ws/install/audio_common_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/home/ubuntu/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/ubuntu', 'CYCLONEDDS_URI': '/etc/turtlebot4/cyclonedds_rpi.xml', 'OLDPWD': '/home/ubuntu/pong-soccer', 'TERM_PROGRAM_VERSION': '1.92.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-d51e25fb-5876-44af-bf0b-0235d830a432.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/ubuntu/pong-soccer/ros2_ws/install', 'ROBOT_SETUP': '/etc/turtlebot4/setup.bash', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ubuntu', 'IGN_GAZEBO_MODEL_PATH': '/opt/ros/humble/share', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '9', 'GAZEBO_MODEL_PATH': '/opt/ros/humble/share', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/ubuntu/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'FASTRTPS_DEFAULT_PROFILES_FILE': '/etc/turtlebot4/fastdds_discovery_super_client.xml', 'TURTLEBOT4_DIAGNOSTICS': '1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'C.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-59422d384c.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg:/home/ubuntu/pong-soccer/ros2_ws/install/tts_ros:/home/ubuntu/pong-soccer/ros2_ws/install/robot_control_architecture_pkg:/home/ubuntu/pong-soccer/ros2_ws/install/bump_n_go_pkg:/home/ubuntu/pong-soccer/ros2_ws/install/audio_common:/home/ubuntu/pong-soccer/ros2_ws/install/audio_common_msgs:/opt/ros/humble', 'SHELL': '/bin/bash', 'ROS_DISCOVERY_SERVER': '127.0.0.1:11811', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/humble/share', 'GAZEBO_RESOURCE_PATH': '/opt/ros/humble/share', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'ROBOT_NAMESPACE': '', 'PWD': '/home/ubuntu/pong-soccer/ros2_ws/build/pong_soccer_pkg', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '128.84.91.25 53808 10.52.16.27 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/pong-soccer/ros2_ws/build/pong_soccer_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/lib/python3.10/site-packages:/home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/lib/python3.10/site-packages:/home/ubuntu/pong-soccer/ros2_ws/install/tts_ros/local/lib/python3.10/dist-packages:/home/ubuntu/pong-soccer/ros2_ws/install/robot_control_architecture_pkg/lib/python3.10/site-packages:/home/ubuntu/pong-soccer/ros2_ws/install/bump_n_go_pkg/lib/python3.10/site-packages:/home/ubuntu/pong-soccer/ros2_ws/install/audio_common/local/lib/python3.10/dist-packages:/home/ubuntu/pong-soccer/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/pong-soccer/ros2_ws/install/tts_ros:/home/ubuntu/pong-soccer/ros2_ws/install/audio_common:/home/ubuntu/pong-soccer/ros2_ws/install/audio_common_msgs'}, 'shell': False}
+[6.097245] (-) TimerEvent: {}
+[6.203576] (-) TimerEvent: {}
+[6.304484] (-) TimerEvent: {}
+[6.405412] (-) TimerEvent: {}
+[6.506389] (-) TimerEvent: {}
+[6.607580] (-) TimerEvent: {}
+[6.708519] (-) TimerEvent: {}
+[6.810245] (-) TimerEvent: {}
+[6.911246] (-) TimerEvent: {}
+[7.012019] (-) TimerEvent: {}
+[7.113367] (-) TimerEvent: {}
+[7.214295] (-) TimerEvent: {}
+[7.315948] (-) TimerEvent: {}
+[7.417237] (-) TimerEvent: {}
+[7.518076] (-) TimerEvent: {}
+[7.624504] (-) TimerEvent: {}
+[7.634870] (robot_control_architecture_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[7.637600] (pong_soccer_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[7.641363] (robot_control_architecture_pkg) StdoutLine: {'line': b'writing ../../build/robot_control_architecture_pkg/robot_control_architecture_pkg.egg-info/PKG-INFO\n'}
+[7.642159] (robot_control_architecture_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/robot_control_architecture_pkg/robot_control_architecture_pkg.egg-info/dependency_links.txt\n'}
+[7.658260] (pong_soccer_pkg) StdoutLine: {'line': b'writing ../../build/pong_soccer_pkg/pong_soccer_pkg.egg-info/PKG-INFO\n'}
+[7.659210] (robot_control_architecture_pkg) StdoutLine: {'line': b'writing entry points to ../../build/robot_control_architecture_pkg/robot_control_architecture_pkg.egg-info/entry_points.txt\n'}
+[7.663944] (robot_control_architecture_pkg) StdoutLine: {'line': b'writing requirements to ../../build/robot_control_architecture_pkg/robot_control_architecture_pkg.egg-info/requires.txt\n'}
+[7.667269] (robot_control_architecture_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/robot_control_architecture_pkg/robot_control_architecture_pkg.egg-info/top_level.txt\n'}
+[7.668278] (pong_soccer_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/pong_soccer_pkg/pong_soccer_pkg.egg-info/dependency_links.txt\n'}
+[7.670012] (pong_soccer_pkg) StdoutLine: {'line': b'writing entry points to ../../build/pong_soccer_pkg/pong_soccer_pkg.egg-info/entry_points.txt\n'}
+[7.670708] (pong_soccer_pkg) StdoutLine: {'line': b'writing requirements to ../../build/pong_soccer_pkg/pong_soccer_pkg.egg-info/requires.txt\n'}
+[7.676915] (pong_soccer_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/pong_soccer_pkg/pong_soccer_pkg.egg-info/top_level.txt\n'}
+[7.677633] (robot_control_architecture_pkg) StdoutLine: {'line': b"reading manifest file '../../build/robot_control_architecture_pkg/robot_control_architecture_pkg.egg-info/SOURCES.txt'\n"}
+[7.678242] (robot_control_architecture_pkg) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[7.679109] (robot_control_architecture_pkg) StdoutLine: {'line': b"writing manifest file '../../build/robot_control_architecture_pkg/robot_control_architecture_pkg.egg-info/SOURCES.txt'\n"}
+[7.679823] (pong_soccer_pkg) StdoutLine: {'line': b"reading manifest file '../../build/pong_soccer_pkg/pong_soccer_pkg.egg-info/SOURCES.txt'\n"}
+[7.684015] (robot_control_architecture_pkg) StdoutLine: {'line': b'running build\n'}
+[7.685146] (robot_control_architecture_pkg) StdoutLine: {'line': b'running build_py\n'}
+[7.685908] (pong_soccer_pkg) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[7.686709] (robot_control_architecture_pkg) StdoutLine: {'line': b'running install\n'}
+[7.692935] (robot_control_architecture_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[7.694688] (pong_soccer_pkg) StdoutLine: {'line': b"writing manifest file '../../build/pong_soccer_pkg/pong_soccer_pkg.egg-info/SOURCES.txt'\n"}
+[7.695555] (robot_control_architecture_pkg) StdoutLine: {'line': b'running install_data\n'}
+[7.696146] (pong_soccer_pkg) StdoutLine: {'line': b'running build\n'}
+[7.696721] (pong_soccer_pkg) StdoutLine: {'line': b'running build_py\n'}
+[7.697228] (pong_soccer_pkg) StdoutLine: {'line': b'running install\n'}
+[7.697774] (pong_soccer_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[7.700843] (robot_control_architecture_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.701530] (pong_soccer_pkg) StdoutLine: {'line': b'running install_data\n'}
+[7.702070] (pong_soccer_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.709273] (robot_control_architecture_pkg) StdoutLine: {'line': b"removing '/home/ubuntu/pong-soccer/ros2_ws/install/robot_control_architecture_pkg/lib/python3.10/site-packages/robot_control_architecture_pkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[7.710043] (robot_control_architecture_pkg) StdoutLine: {'line': b'Copying ../../build/robot_control_architecture_pkg/robot_control_architecture_pkg.egg-info to /home/ubuntu/pong-soccer/ros2_ws/install/robot_control_architecture_pkg/lib/python3.10/site-packages/robot_control_architecture_pkg-0.0.0-py3.10.egg-info\n'}
+[7.710814] (pong_soccer_pkg) StdoutLine: {'line': b"removing '/home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/lib/python3.10/site-packages/pong_soccer_pkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[7.711506] (robot_control_architecture_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[7.712179] (pong_soccer_pkg) StdoutLine: {'line': b'Copying ../../build/pong_soccer_pkg/pong_soccer_pkg.egg-info to /home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/lib/python3.10/site-packages/pong_soccer_pkg-0.0.0-py3.10.egg-info\n'}
+[7.718696] (pong_soccer_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[7.724854] (-) TimerEvent: {}
+[7.815890] (robot_control_architecture_pkg) StdoutLine: {'line': b'Installing robot_control_architecture_node script to /home/ubuntu/pong-soccer/ros2_ws/install/robot_control_architecture_pkg/lib/robot_control_architecture_pkg\n'}
+[7.818049] (robot_control_architecture_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/ubuntu/pong-soccer/ros2_ws/build/robot_control_architecture_pkg/install.log'\n"}
+[7.825107] (-) TimerEvent: {}
+[7.857386] (pong_soccer_pkg) StdoutLine: {'line': b'Installing pong_soccer script to /home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/lib/pong_soccer_pkg\n'}
+[7.861972] (pong_soccer_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/ubuntu/pong-soccer/ros2_ws/build/pong_soccer_pkg/install.log'\n"}
+[7.932727] (-) TimerEvent: {}
+[8.039108] (robot_control_architecture_pkg) CommandEnded: {'returncode': 0}
+[8.044003] (-) TimerEvent: {}
+[8.118325] (robot_control_architecture_pkg) JobEnded: {'identifier': 'robot_control_architecture_pkg', 'rc': 0}
+[8.123749] (pong_soccer_pkg) CommandEnded: {'returncode': 0}
+[8.144316] (-) TimerEvent: {}
+[8.160710] (pong_soccer_pkg) JobEnded: {'identifier': 'pong_soccer_pkg', 'rc': 0}
+[8.164570] (-) EventReactorShutdown: {}

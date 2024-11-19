@@ -1,0 +1,29 @@
+running egg_info
+creating ../../build/pong_soccer_pkg/pong_soccer_pkg.egg-info
+writing ../../build/pong_soccer_pkg/pong_soccer_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/pong_soccer_pkg/pong_soccer_pkg.egg-info/dependency_links.txt
+writing entry points to ../../build/pong_soccer_pkg/pong_soccer_pkg.egg-info/entry_points.txt
+writing requirements to ../../build/pong_soccer_pkg/pong_soccer_pkg.egg-info/requires.txt
+writing top-level names to ../../build/pong_soccer_pkg/pong_soccer_pkg.egg-info/top_level.txt
+writing manifest file '../../build/pong_soccer_pkg/pong_soccer_pkg.egg-info/SOURCES.txt'
+reading manifest file '../../build/pong_soccer_pkg/pong_soccer_pkg.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/pong_soccer_pkg/pong_soccer_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ubuntu/pong-soccer/ros2_ws/build/pong_soccer_pkg/build
+creating /home/ubuntu/pong-soccer/ros2_ws/build/pong_soccer_pkg/build/lib
+creating /home/ubuntu/pong-soccer/ros2_ws/build/pong_soccer_pkg/build/lib/pong_soccer_pkg
+copying pong_soccer_pkg/pong_soccer_node.py -> /home/ubuntu/pong-soccer/ros2_ws/build/pong_soccer_pkg/build/lib/pong_soccer_pkg
+copying pong_soccer_pkg/__init__.py -> /home/ubuntu/pong-soccer/ros2_ws/build/pong_soccer_pkg/build/lib/pong_soccer_pkg
+running install
+running install_lib
+creating /home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/lib/python3.10/site-packages/pong_soccer_pkg
+copying /home/ubuntu/pong-soccer/ros2_ws/build/pong_soccer_pkg/build/lib/pong_soccer_pkg/pong_soccer_node.py -> /home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/lib/python3.10/site-packages/pong_soccer_pkg
+copying /home/ubuntu/pong-soccer/ros2_ws/build/pong_soccer_pkg/build/lib/pong_soccer_pkg/__init__.py -> /home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/lib/python3.10/site-packages/pong_soccer_pkg
+byte-compiling /home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/lib/python3.10/site-packages/pong_soccer_pkg/pong_soccer_node.py to pong_soccer_node.cpython-310.pyc
+byte-compiling /home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/lib/python3.10/site-packages/pong_soccer_pkg/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/share/ament_index
+creating /home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/share/ament_index/resource_index
+creating /home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/share/ament_index/resource_index/packages

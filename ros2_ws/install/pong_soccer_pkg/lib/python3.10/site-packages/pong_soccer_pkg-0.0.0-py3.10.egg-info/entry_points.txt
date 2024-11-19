@@ -1,0 +1,3 @@
+[console_scripts]
+pong_soccer_node = pong_soccer_pkg.pong_soccer_node:main
+

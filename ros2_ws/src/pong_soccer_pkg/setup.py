@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'pong_soccer = pong_soccer_pkg.pong_soccer_node:main'
+            'pong_soccer_node = pong_soccer_pkg.pong_soccer_node:main'
         ],
     },
 )

@@ -1,0 +1,21 @@
+running egg_info
+writing ../../build/pong_soccer_pkg/pong_soccer_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/pong_soccer_pkg/pong_soccer_pkg.egg-info/dependency_links.txt
+writing entry points to ../../build/pong_soccer_pkg/pong_soccer_pkg.egg-info/entry_points.txt
+writing requirements to ../../build/pong_soccer_pkg/pong_soccer_pkg.egg-info/requires.txt
+writing top-level names to ../../build/pong_soccer_pkg/pong_soccer_pkg.egg-info/top_level.txt
+reading manifest file '../../build/pong_soccer_pkg/pong_soccer_pkg.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/pong_soccer_pkg/pong_soccer_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying resource/pong_soccer_pkg -> /home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/share/ament_index/resource_index/packages
+copying package.xml -> /home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/share/pong_soccer_pkg
+running install_egg_info
+Copying ../../build/pong_soccer_pkg/pong_soccer_pkg.egg-info to /home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/lib/python3.10/site-packages/pong_soccer_pkg-0.0.0-py3.10.egg-info
+running install_scripts
+Installing pong_soccer script to /home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/lib/pong_soccer_pkg
+writing list of installed files to '/home/ubuntu/pong-soccer/ros2_ws/build/pong_soccer_pkg/install.log'

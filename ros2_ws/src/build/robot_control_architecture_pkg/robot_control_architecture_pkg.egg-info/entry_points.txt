@@ -1,3 +1,0 @@
-[console_scripts]
-robot_control_architecture_node = robot_control_architecture_pkg.robot_control_architecture_node:main
-

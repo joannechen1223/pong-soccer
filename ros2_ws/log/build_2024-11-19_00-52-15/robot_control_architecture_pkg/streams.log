@@ -1,0 +1,22 @@
+[5.932s] Invoking command in '/home/ubuntu/pong-soccer/ros2_ws/src/robot_control_architecture_pkg': PYTHONPATH=/home/ubuntu/pong-soccer/ros2_ws/build/robot_control_architecture_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/pong-soccer/ros2_ws/install/robot_control_architecture_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_control_architecture_pkg build --build-base /home/ubuntu/pong-soccer/ros2_ws/build/robot_control_architecture_pkg/build install --record /home/ubuntu/pong-soccer/ros2_ws/build/robot_control_architecture_pkg/install.log --single-version-externally-managed install_data
+[7.581s] running egg_info
+[7.587s] writing ../../build/robot_control_architecture_pkg/robot_control_architecture_pkg.egg-info/PKG-INFO
+[7.603s] writing dependency_links to ../../build/robot_control_architecture_pkg/robot_control_architecture_pkg.egg-info/dependency_links.txt
+[7.607s] writing entry points to ../../build/robot_control_architecture_pkg/robot_control_architecture_pkg.egg-info/entry_points.txt
+[7.610s] writing requirements to ../../build/robot_control_architecture_pkg/robot_control_architecture_pkg.egg-info/requires.txt
+[7.613s] writing top-level names to ../../build/robot_control_architecture_pkg/robot_control_architecture_pkg.egg-info/top_level.txt
+[7.623s] reading manifest file '../../build/robot_control_architecture_pkg/robot_control_architecture_pkg.egg-info/SOURCES.txt'
+[7.624s] adding license file 'LICENSE'
+[7.625s] writing manifest file '../../build/robot_control_architecture_pkg/robot_control_architecture_pkg.egg-info/SOURCES.txt'
+[7.630s] running build
+[7.631s] running build_py
+[7.633s] running install
+[7.639s] running install_lib
+[7.641s] running install_data
+[7.646s] running install_egg_info
+[7.655s] removing '/home/ubuntu/pong-soccer/ros2_ws/install/robot_control_architecture_pkg/lib/python3.10/site-packages/robot_control_architecture_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[7.656s] Copying ../../build/robot_control_architecture_pkg/robot_control_architecture_pkg.egg-info to /home/ubuntu/pong-soccer/ros2_ws/install/robot_control_architecture_pkg/lib/python3.10/site-packages/robot_control_architecture_pkg-0.0.0-py3.10.egg-info
+[7.657s] running install_scripts
+[7.762s] Installing robot_control_architecture_node script to /home/ubuntu/pong-soccer/ros2_ws/install/robot_control_architecture_pkg/lib/robot_control_architecture_pkg
+[7.768s] writing list of installed files to '/home/ubuntu/pong-soccer/ros2_ws/build/robot_control_architecture_pkg/install.log'
+[7.987s] Invoked command in '/home/ubuntu/pong-soccer/ros2_ws/src/robot_control_architecture_pkg' returned '0': PYTHONPATH=/home/ubuntu/pong-soccer/ros2_ws/build/robot_control_architecture_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/pong-soccer/ros2_ws/install/robot_control_architecture_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_control_architecture_pkg build --build-base /home/ubuntu/pong-soccer/ros2_ws/build/robot_control_architecture_pkg/build install --record /home/ubuntu/pong-soccer/ros2_ws/build/robot_control_architecture_pkg/install.log --single-version-externally-managed install_data

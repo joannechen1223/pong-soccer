@@ -1,3 +1,0 @@
-string audio
-string file_path ""
-bool loop false

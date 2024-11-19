@@ -1,0 +1,22 @@
+[6.006s] Invoking command in '/home/ubuntu/pong-soccer/ros2_ws/src/pong_soccer_pkg': PYTHONPATH=/home/ubuntu/pong-soccer/ros2_ws/build/pong_soccer_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/pong_soccer_pkg build --build-base /home/ubuntu/pong-soccer/ros2_ws/build/pong_soccer_pkg/build install --record /home/ubuntu/pong-soccer/ros2_ws/build/pong_soccer_pkg/install.log --single-version-externally-managed install_data
+[7.634s] running egg_info
+[7.654s] writing ../../build/pong_soccer_pkg/pong_soccer_pkg.egg-info/PKG-INFO
+[7.665s] writing dependency_links to ../../build/pong_soccer_pkg/pong_soccer_pkg.egg-info/dependency_links.txt
+[7.666s] writing entry points to ../../build/pong_soccer_pkg/pong_soccer_pkg.egg-info/entry_points.txt
+[7.672s] writing requirements to ../../build/pong_soccer_pkg/pong_soccer_pkg.egg-info/requires.txt
+[7.673s] writing top-level names to ../../build/pong_soccer_pkg/pong_soccer_pkg.egg-info/top_level.txt
+[7.676s] reading manifest file '../../build/pong_soccer_pkg/pong_soccer_pkg.egg-info/SOURCES.txt'
+[7.682s] adding license file 'LICENSE'
+[7.691s] writing manifest file '../../build/pong_soccer_pkg/pong_soccer_pkg.egg-info/SOURCES.txt'
+[7.692s] running build
+[7.693s] running build_py
+[7.693s] running install
+[7.694s] running install_lib
+[7.697s] running install_data
+[7.705s] running install_egg_info
+[7.707s] removing '/home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/lib/python3.10/site-packages/pong_soccer_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[7.708s] Copying ../../build/pong_soccer_pkg/pong_soccer_pkg.egg-info to /home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/lib/python3.10/site-packages/pong_soccer_pkg-0.0.0-py3.10.egg-info
+[7.716s] running install_scripts
+[7.854s] Installing pong_soccer script to /home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/lib/pong_soccer_pkg
+[7.859s] writing list of installed files to '/home/ubuntu/pong-soccer/ros2_ws/build/pong_soccer_pkg/install.log'
+[8.120s] Invoked command in '/home/ubuntu/pong-soccer/ros2_ws/src/pong_soccer_pkg' returned '0': PYTHONPATH=/home/ubuntu/pong-soccer/ros2_ws/build/pong_soccer_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/pong_soccer_pkg build --build-base /home/ubuntu/pong-soccer/ros2_ws/build/pong_soccer_pkg/build install --record /home/ubuntu/pong-soccer/ros2_ws/build/pong_soccer_pkg/install.log --single-version-externally-managed install_data
