@@ -1,0 +1,15 @@
+setup.py
+audio_common_msgs/__init__.py
+audio_common_msgs.egg-info/PKG-INFO
+audio_common_msgs.egg-info/SOURCES.txt
+audio_common_msgs.egg-info/dependency_links.txt
+audio_common_msgs.egg-info/top_level.txt
+audio_common_msgs/action/__init__.py
+audio_common_msgs/action/_tts.py
+audio_common_msgs/msg/__init__.py
+audio_common_msgs/msg/_audio.py
+audio_common_msgs/msg/_audio_data.py
+audio_common_msgs/msg/_audio_info.py
+audio_common_msgs/msg/_audio_stamped.py
+audio_common_msgs/srv/__init__.py
+audio_common_msgs/srv/_music_play.py

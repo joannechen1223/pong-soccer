@@ -1,0 +1,25 @@
+[8.267s] Invoking command in '/home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/src/robot_control_architecture_pkg': PYTHONPATH=/home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/build/robot_control_architecture_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/install/robot_control_architecture_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_control_architecture_pkg build --build-base /home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/build/robot_control_architecture_pkg/build install --record /home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/build/robot_control_architecture_pkg/install.log --single-version-externally-managed install_data
+[10.284s] running egg_info
+[10.293s] writing ../../build/robot_control_architecture_pkg/robot_control_architecture_pkg.egg-info/PKG-INFO
+[10.301s] writing dependency_links to ../../build/robot_control_architecture_pkg/robot_control_architecture_pkg.egg-info/dependency_links.txt
+[10.310s] writing entry points to ../../build/robot_control_architecture_pkg/robot_control_architecture_pkg.egg-info/entry_points.txt
+[10.319s] writing requirements to ../../build/robot_control_architecture_pkg/robot_control_architecture_pkg.egg-info/requires.txt
+[10.325s] writing top-level names to ../../build/robot_control_architecture_pkg/robot_control_architecture_pkg.egg-info/top_level.txt
+[10.345s] reading manifest file '../../build/robot_control_architecture_pkg/robot_control_architecture_pkg.egg-info/SOURCES.txt'
+[10.350s] adding license file 'LICENSE'
+[10.359s] writing manifest file '../../build/robot_control_architecture_pkg/robot_control_architecture_pkg.egg-info/SOURCES.txt'
+[10.370s] running build
+[10.374s] running build_py
+[10.378s] copying robot_control_architecture_pkg/robot_control_architecture_node.py -> /home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/build/robot_control_architecture_pkg/build/lib/robot_control_architecture_pkg
+[10.388s] running install
+[10.393s] running install_lib
+[10.403s] copying /home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/build/robot_control_architecture_pkg/build/lib/robot_control_architecture_pkg/robot_control_architecture_node.py -> /home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/install/robot_control_architecture_pkg/lib/python3.10/site-packages/robot_control_architecture_pkg
+[10.423s] byte-compiling /home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/install/robot_control_architecture_pkg/lib/python3.10/site-packages/robot_control_architecture_pkg/robot_control_architecture_node.py to robot_control_architecture_node.cpython-310.pyc
+[10.439s] running install_data
+[10.443s] running install_egg_info
+[10.454s] removing '/home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/install/robot_control_architecture_pkg/lib/python3.10/site-packages/robot_control_architecture_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[10.475s] Copying ../../build/robot_control_architecture_pkg/robot_control_architecture_pkg.egg-info to /home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/install/robot_control_architecture_pkg/lib/python3.10/site-packages/robot_control_architecture_pkg-0.0.0-py3.10.egg-info
+[10.523s] running install_scripts
+[10.743s] Installing robot_control_architecture_node script to /home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/install/robot_control_architecture_pkg/lib/robot_control_architecture_pkg
+[10.752s] writing list of installed files to '/home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/build/robot_control_architecture_pkg/install.log'
+[11.021s] Invoked command in '/home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/src/robot_control_architecture_pkg' returned '0': PYTHONPATH=/home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/build/robot_control_architecture_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/install/robot_control_architecture_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_control_architecture_pkg build --build-base /home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/build/robot_control_architecture_pkg/build install --record /home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/build/robot_control_architecture_pkg/install.log --single-version-externally-managed install_data

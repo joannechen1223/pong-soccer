@@ -1,0 +1,11 @@
+/home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/src/build/tts_ros/CMakeFiles/uninstall.dir
+/home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/src/build/tts_ros/CMakeFiles/tts_ros_uninstall.dir
+/home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/src/build/tts_ros/CMakeFiles/ament_cmake_python_copy_tts_ros.dir
+/home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/src/build/tts_ros/CMakeFiles/ament_cmake_python_build_tts_ros_egg.dir
+/home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/src/build/tts_ros/CMakeFiles/test.dir
+/home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/src/build/tts_ros/CMakeFiles/edit_cache.dir
+/home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/src/build/tts_ros/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/src/build/tts_ros/CMakeFiles/list_install_components.dir
+/home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/src/build/tts_ros/CMakeFiles/install.dir
+/home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/src/build/tts_ros/CMakeFiles/install/local.dir
+/home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/src/build/tts_ros/CMakeFiles/install/strip.dir

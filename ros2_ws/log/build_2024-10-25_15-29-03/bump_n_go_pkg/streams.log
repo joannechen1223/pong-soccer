@@ -1,0 +1,22 @@
+[5.429s] Invoking command in '/home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/src/bump_n_go_pkg': PYTHONPATH=/home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/build/bump_n_go_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/install/bump_n_go_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/bump_n_go_pkg build --build-base /home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/build/bump_n_go_pkg/build install --record /home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/build/bump_n_go_pkg/install.log --single-version-externally-managed install_data
+[7.241s] running egg_info
+[7.247s] writing ../../build/bump_n_go_pkg/bump_n_go_pkg.egg-info/PKG-INFO
+[7.251s] writing dependency_links to ../../build/bump_n_go_pkg/bump_n_go_pkg.egg-info/dependency_links.txt
+[7.253s] writing entry points to ../../build/bump_n_go_pkg/bump_n_go_pkg.egg-info/entry_points.txt
+[7.258s] writing requirements to ../../build/bump_n_go_pkg/bump_n_go_pkg.egg-info/requires.txt
+[7.262s] writing top-level names to ../../build/bump_n_go_pkg/bump_n_go_pkg.egg-info/top_level.txt
+[7.273s] reading manifest file '../../build/bump_n_go_pkg/bump_n_go_pkg.egg-info/SOURCES.txt'
+[7.277s] adding license file 'LICENSE'
+[7.279s] writing manifest file '../../build/bump_n_go_pkg/bump_n_go_pkg.egg-info/SOURCES.txt'
+[7.286s] running build
+[7.286s] running build_py
+[7.287s] running install
+[7.287s] running install_lib
+[7.293s] running install_data
+[7.295s] running install_egg_info
+[7.309s] removing '/home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/install/bump_n_go_pkg/lib/python3.10/site-packages/bump_n_go_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[7.312s] Copying ../../build/bump_n_go_pkg/bump_n_go_pkg.egg-info to /home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/install/bump_n_go_pkg/lib/python3.10/site-packages/bump_n_go_pkg-0.0.0-py3.10.egg-info
+[7.323s] running install_scripts
+[7.434s] Installing bump_n_go_node script to /home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/install/bump_n_go_pkg/lib/bump_n_go_pkg
+[7.440s] writing list of installed files to '/home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/build/bump_n_go_pkg/install.log'
+[7.664s] Invoked command in '/home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/src/bump_n_go_pkg' returned '0': PYTHONPATH=/home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/build/bump_n_go_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/install/bump_n_go_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/bump_n_go_pkg build --build-base /home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/build/bump_n_go_pkg/build install --record /home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/build/bump_n_go_pkg/install.log --single-version-externally-managed install_data

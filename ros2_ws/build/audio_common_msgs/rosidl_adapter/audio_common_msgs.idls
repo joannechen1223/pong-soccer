@@ -1,0 +1,6 @@
+/home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/build/audio_common_msgs/rosidl_adapter/audio_common_msgs:msg/AudioData.idl
+/home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/build/audio_common_msgs/rosidl_adapter/audio_common_msgs:msg/AudioInfo.idl
+/home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/build/audio_common_msgs/rosidl_adapter/audio_common_msgs:msg/Audio.idl
+/home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/build/audio_common_msgs/rosidl_adapter/audio_common_msgs:msg/AudioStamped.idl
+/home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/build/audio_common_msgs/rosidl_adapter/audio_common_msgs:action/TTS.idl
+/home/ubuntu/lab-3-robot-control-architecture-ii-tortoise-hare/ros2_ws/build/audio_common_msgs/rosidl_adapter/audio_common_msgs:srv/MusicPlay.idl

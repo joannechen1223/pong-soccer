@@ -1,0 +1,3 @@
+source;share/tts_ros/environment/ament_prefix_path.sh
+source;share/tts_ros/environment/path.sh
+source;share/tts_ros/environment/pythonpath.sh

@@ -1,0 +1,7 @@
+setup.py
+tts_ros/__init__.py
+tts_ros/tts_node.py
+tts_ros.egg-info/PKG-INFO
+tts_ros.egg-info/SOURCES.txt
+tts_ros.egg-info/dependency_links.txt
+tts_ros.egg-info/top_level.txt
