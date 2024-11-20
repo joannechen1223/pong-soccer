@@ -22,26 +22,29 @@ class PongSoccerNode(Node):
         self.RED_WIN = 4
         self.BLUE_WIN = 5
         
-        
-
         self.state = self.STOP
         self.state_ts = self.get_clock().now()
+        self.start_time = self.get_clock().now()
+
+        # temp red ball in simulation section
+        self.RED_BALL_IN_SIM_SECTION = [2, 18, 38, 45, 50]
+        self.BLUE_BALL_IN_SIM_SECTION = [7, 30]
 
         self.prev_state = None
-        self.prev_move_state = None
+        self.prev_move_state = self.MOVE_RED
 
         self.position = 0
         self.red_move_distance = 1
-        self.blue_move_distance = 1
+        self.blue_move_distance = -1
         self.RED_GOAL_POSITION = 3
         self.BLUE_GOAL_POSITION = -3
 
-        self.FORWARD_TIME = 3.0
+        self.FORWARD_TIME = 2.0
         self.STOP_TIME = 2.0
-        self.TURNING_TIME = 2.4
+        self.TURNING_TIME = 2.0
 
         self.SPEED_LINEAR = 0.3
-        self.SPEED_ANGULAR = 0.5
+        self.SPEED_ANGULAR = 1.4
 
         self.vel_pub = self.create_publisher(Twist, 'cmd_vel', 10)
         self.timer = self.create_timer(0.05, self.control_cycle)
@@ -53,7 +56,15 @@ class PongSoccerNode(Node):
         if self.state == self.STOP:
             out_vel.linear.x = 0.0
             out_vel.angular.z = 0.0
-            if self.check_stop_2_move_red():
+
+            if self.check_stop_2_red_win():
+                print("Stop ==> Red Win")
+                self.go_state(self.RED_WIN)
+            elif self.check_stop_2_blue_win():
+                print("Stop ==> Blue Win")
+                self.go_state(self.BLUE_WIN)
+
+            elif self.check_stop_2_move_red():
                 print('Stop ==> Move Red')
                 self.go_state(self.MOVE_RED)
             elif self.check_stop_2_move_blue():
@@ -76,9 +87,6 @@ class PongSoccerNode(Node):
                 self.prev_move_state = self.MOVE_RED
                 self.position = self.position + self.red_move_distance
                 self.go_state(self.STOP)
-            elif self.check_move_red_2_win():
-                print("Move Red ==> Red Win")
-                self.go_state(self.RED_WIN)
         
         if self.state == self.MOVE_BLUE:
             if self.prev_move_state != self.MOVE_BLUE:
@@ -96,12 +104,10 @@ class PongSoccerNode(Node):
                 self.prev_move_state = self.MOVE_BLUE
                 self.position = self.position + self.blue_move_distance
                 self.go_state(self.STOP)
-            elif self.check_move_blue_2_win():
-                print("Move Blue ==> Blue Win")
-                self.go_state(self.BLUE_WIN)
 
         if self.prev_state != self.state:
             print(self.state)
+            print(f'pos: {self.position}')
         self.prev_state = self.state
         
         self.vel_pub.publish(out_vel)
@@ -110,32 +116,58 @@ class PongSoccerNode(Node):
         '''
         Add comments
         '''
+        # print(new_state)
         self.state = new_state
         self.state_ts = self.get_clock().now()
 
     def check_stop_2_move_blue(self):
-        # TODO
+        # TODO: change to sensor data
+        current_time_sec = self.get_clock().now().seconds_nanoseconds()[0] - self.start_time.seconds_nanoseconds()[0]
+        for sec in self.BLUE_BALL_IN_SIM_SECTION:
+            if current_time_sec == sec:
+                return True
         return False
     
     def check_stop_2_move_red(self):
-        # TODO
+        # TODO: change to sensor data
+        current_time_sec = self.get_clock().now().seconds_nanoseconds()[0] - self.start_time.seconds_nanoseconds()[0]
+        for sec in self.RED_BALL_IN_SIM_SECTION:
+            if current_time_sec == sec:
+                return True
         return False
 
     def check_move_blue_2_stop(self):
         # TODO
+        elapsed = self.get_clock().now() - self.state_ts
+        move_seconds = self.FORWARD_TIME
+        if self.prev_move_state != self.MOVE_BLUE:
+            move_seconds = move_seconds + self.TURNING_TIME
+        if elapsed > Duration(seconds=move_seconds):
+            return True
         return False
 
     def check_move_red_2_stop(self):
         # TODO
+        elapsed = self.get_clock().now() - self.state_ts
+        move_seconds = self.FORWARD_TIME
+        if self.prev_move_state != self.MOVE_RED:
+            move_seconds = move_seconds + self.TURNING_TIME
+        if elapsed > Duration(seconds=move_seconds):
+            return True
         return False
     
-    def check_move_red_2_win(self):
+    def check_stop_2_red_win(self):
         # TODO
+        if self.position == self.RED_GOAL_POSITION:
+            return True
         return False
 
-    def check_move_blue_2_win(self):
+    def check_stop_2_blue_win(self):
         # TODO
+        if self.position == self.BLUE_GOAL_POSITION:
+            return True
         return False
+
         
 
 

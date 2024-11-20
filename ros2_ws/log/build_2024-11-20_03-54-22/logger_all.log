@@ -1,0 +1,129 @@
+[0.533s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.533s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff86e61a20>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff8702e050>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff8702e050>>, mixin_verb=('build',))
+[1.566s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.566s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.567s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.567s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.567s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.568s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.568s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ubuntu/pong-soccer/ros2_ws'
+[1.568s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.569s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.569s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.570s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.570s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.570s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.570s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.570s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.571s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.624s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.625s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.625s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.626s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.627s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.628s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.629s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.629s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.631s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.632s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.632s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.633s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.634s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.635s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.636s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.637s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.637s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.638s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.638s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.638s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.638s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.639s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.639s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.640s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.640s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.640s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.640s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.641s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.641s] Level 1:colcon.colcon_core.package_identification:_identify(src/pong_soccer_pkg) by extensions ['ignore', 'ignore_ament_install']
+[1.642s] Level 1:colcon.colcon_core.package_identification:_identify(src/pong_soccer_pkg) by extension 'ignore'
+[1.642s] Level 1:colcon.colcon_core.package_identification:_identify(src/pong_soccer_pkg) by extension 'ignore_ament_install'
+[1.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/pong_soccer_pkg) by extensions ['colcon_pkg']
+[1.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/pong_soccer_pkg) by extension 'colcon_pkg'
+[1.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/pong_soccer_pkg) by extensions ['colcon_meta']
+[1.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/pong_soccer_pkg) by extension 'colcon_meta'
+[1.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/pong_soccer_pkg) by extensions ['ros']
+[1.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/pong_soccer_pkg) by extension 'ros'
+[1.661s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pong_soccer_pkg' with type 'ros.ament_python' and name 'pong_soccer_pkg'
+[1.662s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.663s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.663s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.663s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.664s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.901s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.901s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.919s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/ubuntu/pong-soccer/ros2_ws/install
+[1.932s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 332 installed packages in /opt/ros/humble
+[1.943s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.260s] Level 5:colcon.colcon_core.verb:set package 'pong_soccer_pkg' build argument 'cmake_args' from command line to 'None'
+[2.261s] Level 5:colcon.colcon_core.verb:set package 'pong_soccer_pkg' build argument 'cmake_target' from command line to 'None'
+[2.262s] Level 5:colcon.colcon_core.verb:set package 'pong_soccer_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.263s] Level 5:colcon.colcon_core.verb:set package 'pong_soccer_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[2.264s] Level 5:colcon.colcon_core.verb:set package 'pong_soccer_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[2.265s] Level 5:colcon.colcon_core.verb:set package 'pong_soccer_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[2.266s] Level 5:colcon.colcon_core.verb:set package 'pong_soccer_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[2.267s] Level 5:colcon.colcon_core.verb:set package 'pong_soccer_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[2.268s] Level 5:colcon.colcon_core.verb:set package 'pong_soccer_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.269s] DEBUG:colcon.colcon_core.verb:Building package 'pong_soccer_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/pong-soccer/ros2_ws/build/pong_soccer_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg', 'merge_install': False, 'path': '/home/ubuntu/pong-soccer/ros2_ws/src/pong_soccer_pkg', 'symlink_install': False, 'test_result_base': None}
+[2.270s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.275s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.277s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/pong-soccer/ros2_ws/src/pong_soccer_pkg' with build type 'ament_python'
+[2.277s] Level 1:colcon.colcon_core.shell:create_environment_hook('pong_soccer_pkg', 'ament_prefix_path')
+[2.291s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.293s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/share/pong_soccer_pkg/hook/ament_prefix_path.ps1'
+[2.297s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/share/pong_soccer_pkg/hook/ament_prefix_path.dsv'
+[2.301s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/share/pong_soccer_pkg/hook/ament_prefix_path.sh'
+[2.306s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.307s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.853s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/pong-soccer/ros2_ws/src/pong_soccer_pkg'
+[3.854s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.854s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.900s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/pong-soccer/ros2_ws/src/pong_soccer_pkg': PYTHONPATH=/home/ubuntu/pong-soccer/ros2_ws/build/pong_soccer_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/pong_soccer_pkg build --build-base /home/ubuntu/pong-soccer/ros2_ws/build/pong_soccer_pkg/build install --record /home/ubuntu/pong-soccer/ros2_ws/build/pong_soccer_pkg/install.log --single-version-externally-managed install_data
+[7.669s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/pong-soccer/ros2_ws/src/pong_soccer_pkg' returned '0': PYTHONPATH=/home/ubuntu/pong-soccer/ros2_ws/build/pong_soccer_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/pong_soccer_pkg build --build-base /home/ubuntu/pong-soccer/ros2_ws/build/pong_soccer_pkg/build install --record /home/ubuntu/pong-soccer/ros2_ws/build/pong_soccer_pkg/install.log --single-version-externally-managed install_data
+[7.684s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg' for CMake module files
+[7.687s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg' for CMake config files
+[7.690s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/lib'
+[7.692s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/bin'
+[7.692s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/lib/pkgconfig/pong_soccer_pkg.pc'
+[7.693s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/lib/python3.10/site-packages'
+[7.693s] Level 1:colcon.colcon_core.shell:create_environment_hook('pong_soccer_pkg', 'pythonpath')
+[7.694s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/share/pong_soccer_pkg/hook/pythonpath.ps1'
+[7.697s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/share/pong_soccer_pkg/hook/pythonpath.dsv'
+[7.699s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/share/pong_soccer_pkg/hook/pythonpath.sh'
+[7.702s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/bin'
+[7.703s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pong_soccer_pkg)
+[7.705s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/share/pong_soccer_pkg/package.ps1'
+[7.709s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/share/pong_soccer_pkg/package.dsv'
+[7.712s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/share/pong_soccer_pkg/package.sh'
+[7.715s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/share/pong_soccer_pkg/package.bash'
+[7.720s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/share/pong_soccer_pkg/package.zsh'
+[7.723s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/pong-soccer/ros2_ws/install/pong_soccer_pkg/share/colcon-core/packages/pong_soccer_pkg)
+[7.724s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.727s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.727s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[7.730s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.754s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[7.755s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.755s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.756s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.759s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[7.760s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.761s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/pong-soccer/ros2_ws/install/local_setup.ps1'
+[7.766s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/pong-soccer/ros2_ws/install/_local_setup_util_ps1.py'
+[7.774s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/pong-soccer/ros2_ws/install/setup.ps1'
+[7.781s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/pong-soccer/ros2_ws/install/local_setup.sh'
+[7.784s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/pong-soccer/ros2_ws/install/_local_setup_util_sh.py'
+[7.788s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/pong-soccer/ros2_ws/install/setup.sh'
+[7.794s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/pong-soccer/ros2_ws/install/local_setup.bash'
+[7.797s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/pong-soccer/ros2_ws/install/setup.bash'
+[7.803s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/pong-soccer/ros2_ws/install/local_setup.zsh'
+[7.806s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/pong-soccer/ros2_ws/install/setup.zsh'

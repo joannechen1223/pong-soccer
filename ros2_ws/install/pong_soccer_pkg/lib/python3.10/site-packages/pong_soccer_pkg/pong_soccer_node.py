@@ -16,217 +16,98 @@ class PongSoccerNode(Node):
     def __init__(self):
         super().__init__('pong_soccer')
 
-        self.FORWARD = 0
-        self.BACK = 1
-        self.TURN = 2
-        self.STOP = 3
-        self.SPIN = 4
-        self.MOVE_LEFT = 5
-        self.SPEECH = 6
+        self.STOP = 0
+        self.MOVE_RED = 2
+        self.MOVE_BLUE = 3
+        self.RED_WIN = 4
+        self.BLUE_WIN = 5
+        
+        
 
-        # differentiate obstacle color
-        self.OBSTACLE_DETECT_START_X = 126
-        self.OBSTACLE_DISTANCE_END_X = 175
-        self.OBSTACLE_DETECT_START_Y = 126
-        self.OBSTACLE_DETECT_START_Y = 175
-
-        self.state = self.FORWARD
+        self.state = self.STOP
         self.state_ts = self.get_clock().now()
+        self.start_time = self.get_clock().now()
+
+        # temp red ball in simulation section
+        self.RED_BALL_IN_SIM_SECTION = [2, 18, 38, 45, 50]
+        self.BLUE_BALL_IN_SIM_SECTION = [7, 30]
 
         self.prev_state = None
+        self.prev_move_state = self.MOVE_RED
 
-        self.FORWARD_TIME = 3.0
-        self.TURNING_TIME = 2.4 # 2 seconds
-        self.BACKING_TIME = 2.0 # 2 seconds
-        self.SCAN_TIMEOUT = 1.0 # 1 second
-        self.MOVE_LEFT_TIME = 2.2
+        self.position = 0
+        self.red_move_distance = 1
+        self.blue_move_distance = -1
+        self.RED_GOAL_POSITION = 3
+        self.BLUE_GOAL_POSITION = -3
 
-        self.forward_time = 0.0
+        self.FORWARD_TIME = 2.0
+        self.STOP_TIME = 2.0
+        self.TURNING_TIME = 2.0
 
         self.SPEED_LINEAR = 0.3
-        self.SPEED_ANGULAR = 0.5
-        self.OBSTACLE_DISTANCE = 2.55
-        self.HUMAN_DISTANCE = 65000
-
-        # self.br = CvBridge()
-        # self.last_scan = None
-        # self.last_rgb_image = None
-        # self.last_depth_image = None
-        # self.person_detected = False
-        # self.center_depth = 0
-        # self.person_size = 0
-
-        # # Subscribe to lidar scan
-        # self.scan_sub = self.create_subscription(
-        #     LaserScan,
-        #     'scan',
-        #     self.scan_callback,
-        #     qos_profile_sensor_data)
-    
-        # # Subscribe to RGB /color/image
-        # self.rgb_sub = self.create_subscription(
-        #     Image,
-        #     '/color/image',
-        #     self.rgb_callback,
-        #     10)
-        
-        # # Subscribe to depth /stereo/depth
-        # self.depth_sub = self.create_subscription(
-        #     Image,
-        #     '/stereo/depth',
-        #     self.depth_callback,
-        #     10)
-
-        # # Subscribe to YOLO pedestrian detections /color/mobilenet_detect
-        # self.person_detection_sub = self.create_subscription(
-        #     Detection2DArray,
-        #     '/color/mobilenet_detections',
-        #     self.person_detection_callback,
-        #     10)
+        self.SPEED_ANGULAR = 1.4
 
         self.vel_pub = self.create_publisher(Twist, 'cmd_vel', 10)
         self.timer = self.create_timer(0.05, self.control_cycle)
 
-    # def scan_callback(self, msg):
-    #     # print("in scan_callback")
-    #     self.last_scan = msg
-    
-    # def rgb_callback(self, msg):
-    #     # encoding bgr8
-    #     self.last_rgb_image = self.br.imgmsg_to_cv2(msg, desired_encoding=msg.encoding)
-    #     # print(f"in rgb_callback: {self.last_rgb_image.shape}")
-    
-    # def depth_callback(self, msg):
-    #     print("in depth_callback")
-    #     # Convert raw data to NumPy array
-    #     depth_array = np.frombuffer(msg.data, dtype=np.uint16)
-
-    #     # Handle endianness
-    #     if msg.is_bigendian != (sys.byteorder == 'big'):
-    #         depth_array = depth_array.byteswap()
-        
-    #     # Reshape the array to 2D image dimensions
-    #     depth_array = depth_array.reshape((msg.height, msg.width))
-
-    #     # Convert depth from millimeters to centimeters
-    #     depth_in_cm = depth_array.astype(np.float32) / 10.0
-
-    #     # Optional: Handle invalid depth values (e.g., zero values)
-    #     depth_in_cm[depth_array == 0] = np.nan  # Set invalid measurements to NaN
-
-    #     # Example: Access depth value at the center pixel
-    #     center_row = msg.height // 2
-    #     center_col = msg.width // 2
-    #     center_depth_cm = depth_in_cm[center_row, center_col]
-
-    #     self.get_logger().info(f"Center pixel depth: {center_depth_cm:.2f} cm")
-    #     # print(f"width: {msg.width} height: {msg.height} data_len: {len(msg.data)}")
-    #     # Convert raw data to NumPy array
-    #     depth_array = np.frombuffer(msg.data, dtype=np.uint16)
-
-    #     # Handle endianness
-    #     if msg.is_bigendian != (sys.byteorder == 'big'):
-    #         depth_array = depth_array.byteswap()
-        
-    #     # Reshape the array to 2D image dimensions
-    #     depth_array = depth_array.reshape((msg.height, msg.width))
-
-    #     # Convert depth from millimeters to centimeters
-    #     depth_in_cm = depth_array.astype(np.float32) / 10.0
-
-    #     # Optional: Handle invalid depth values (e.g., zero values)
-    #     depth_in_cm[depth_array == 0] = np.nan  # Set invalid measurements to NaN
-
-    #     # Example: Access depth value at the center pixel
-    #     center_row = msg.height // 2
-    #     center_col = msg.width // 2
-    #     center_depth_cm = depth_in_cm[center_row, center_col]
-
-    #     self.get_logger().info(f"Center pixel depth: {center_depth_cm:.2f} cm")
-    #     self.last_depth_image = msg
-    #     self.center_depth = center_depth_cm
-    
-    # def person_detection_callback(self, msg):
-    #     for detection in msg.detections:
-    #         for result in detection.results:
-    #             class_id = result.hypothesis.class_id
-    #             score = result.hypothesis.score
-    #             # 15 means that there is a person in the camera
-    #             if (class_id == '15') and (score > 0.98):
-    #                 self.person_size = detection.bbox.size_x * detection.bbox.size_y
-    #                 print(self.person_size)
-    #                 self.person_detected = True
-    #             else:
-    #                 self.person_detected = False
-
     def control_cycle(self):
-        '''
-        Copy from Lab 3
-        '''
-        # if self.last_scan is None:
-        #     return
-        
+
         out_vel = Twist()
     
-
-        # if self.state == self.SPIN:
-        #     out_vel.angular.z = self.SPEED_ANGULAR
-        #     if self.check_spin_2_forward():
-        #         print(self.center_depth)
-        #         print('Spin ==> Forward')
-        #         out_vel.angular.z = 0.0
-        #         self.go_state(self.FORWARD)
-
-        if self.state == self.FORWARD:
-
-            out_vel.linear.x = self.SPEED_LINEAR
-            # if self.check_forward_2_speech():
-            #     print('Forward ==> Speech')
-            #     self.go_state(self.SPEECH)
-            # elif self.check_forward_2_move_left(): 
-            #     print('Forward ==> Move Left')                      
-            #     self.go_state(self.MOVE_LEFT)
-            if self.check_forward_2_stop():
-                print("Forward ==> Stop")
-                self.go_state(self.STOP)
-
-        # elif self.state == self.MOVE_LEFT:
-        #     elapsed = self.get_clock().now() - self.state_ts
-        #     if (elapsed < Duration(seconds=self.TURNING_TIME)):
-        #         out_vel.angular.z = self.SPEED_ANGULAR
-        #     else: 
-        #         out_vel.linear.x = self.SPEED_LINEAR 
-        #     if self.check_move_left_2_spin():
-        #         print("Move Left ==> Spin")
-        #         self.go_state(self.SPIN)
-        # elif self.state == self.BACK:
-        #     out_vel.linear.x = -self.SPEED_LINEAR
-        #     if self.check_back_2_turn():
-        #         print("Back ==> Turn")
-        #         self.go_state(self.TURN)
-
-        # elif self.state == self.TURN:
-        #     out_vel.angular.z = self.SPEED_ANGULAR
-
-        #     if self.check_turn_2_forward():
-        #         print("Turn ==> Forward")
-        #         self.go_state(self.FORWARD)
-
-        elif self.state == self.STOP:
+        if self.state == self.STOP:
             out_vel.linear.x = 0.0
-            if self.check_stop_2_forward():
-                print("Stop ==> Forward")
-                self.go_state(self.FORWARD)
+            out_vel.angular.z = 0.0
+            if self.check_stop_2_move_red():
+                print('Stop ==> Move Red')
+                self.go_state(self.MOVE_RED)
+            elif self.check_stop_2_move_blue():
+                print('Stop ==> Move Blue')
+                self.go_state(self.MOVE_BLUE)
         
-        # elif self.state == self.SPEECH:
-        #     # print("Reached State Speech!")
-        #     os.system('aplay hello_loud.wav')
-        #     out_vel.linear.x = 0.0
-        #     exit(0)
-
+        if self.state == self.MOVE_RED:
+            if self.prev_move_state != self.MOVE_RED:
+                # turn 180 degrees
+                elapsed = self.get_clock().now() - self.state_ts
+                if elapsed < Duration(seconds=self.TURNING_TIME):
+                    out_vel.angular.z = self.SPEED_ANGULAR
+                else:
+                    out_vel.linear.x = self.SPEED_LINEAR
+            else:
+                out_vel.linear.x = self.SPEED_LINEAR
+            
+            if self.check_move_red_2_stop():
+                print("Move Red ==> Stop")
+                self.prev_move_state = self.MOVE_RED
+                self.position = self.position + self.red_move_distance
+                self.go_state(self.STOP)
+            elif self.check_move_red_2_win():
+                print("Move Red ==> Red Win")
+                self.go_state(self.RED_WIN)
+        
+        if self.state == self.MOVE_BLUE:
+            if self.prev_move_state != self.MOVE_BLUE:
+                # turn 180 degrees
+                elapsed = self.get_clock().now() - self.state_ts
+                if elapsed < Duration(seconds=self.TURNING_TIME):
+                    out_vel.angular.z = self.SPEED_ANGULAR
+                else:
+                    out_vel.linear.x = self.SPEED_LINEAR
+            else:
+                out_vel.linear.x = self.SPEED_LINEAR
+            
+            if self.check_move_blue_2_stop():
+                print("Move Blue ==> Stop")
+                self.prev_move_state = self.MOVE_BLUE
+                self.position = self.position + self.blue_move_distance
+                self.go_state(self.STOP)
+            elif self.check_move_blue_2_win():
+                print("Move Blue ==> Blue Win")
+                self.go_state(self.BLUE_WIN)
 
         if self.prev_state != self.state:
             print(self.state)
+            print(self.position)
         self.prev_state = self.state
         
         self.vel_pub.publish(out_vel)
@@ -235,77 +116,58 @@ class PongSoccerNode(Node):
         '''
         Add comments
         '''
+        # print(new_state)
         self.state = new_state
         self.state_ts = self.get_clock().now()
 
+    def check_stop_2_move_blue(self):
+        # TODO: change to sensor data
+        current_time_sec = self.get_clock().now().seconds_nanoseconds()[0] - self.start_time.seconds_nanoseconds()[0]
+        for sec in self.BLUE_BALL_IN_SIM_SECTION:
+            if current_time_sec == sec:
+                return True
+        return False
     
-    # def check_spin_2_forward(self):
-    #     if self.person_detected:
-    #         return True
+    def check_stop_2_move_red(self):
+        # TODO: change to sensor data
+        current_time_sec = self.get_clock().now().seconds_nanoseconds()[0] - self.start_time.seconds_nanoseconds()[0]
+        for sec in self.RED_BALL_IN_SIM_SECTION:
+            if current_time_sec == sec:
+                return True
+        return False
 
-
-    # def check_forward_2_move_left(self):
-    #     '''
-    #     Add comments
-    #     '''
-        
-    #     filtered_inf = [x for x in self.last_scan.ranges if not x == float('inf')]
-    #     if len(filtered_inf) == 0:
-    #         return False
-    #     if self.person_size > self.HUMAN_DISTANCE - 30000:
-    #         return False
-        
-    #     lidar_obstacle = sum(filtered_inf)/len(filtered_inf) < self.OBSTACLE_DISTANCE
-    #     print(f'scan_avg: {sum(filtered_inf)/len(filtered_inf)}')
-
-    #     return lidar_obstacle
-
-
-    def check_forward_2_stop(self):
-        '''
-        Add comments
-        '''
+    def check_move_blue_2_stop(self):
+        # TODO
         elapsed = self.get_clock().now() - self.state_ts
-        return elapsed > Duration(seconds=self.FORWARD_TIME)
+        move_seconds = self.FORWARD_TIME
+        if self.prev_move_state != self.MOVE_BLUE:
+            move_seconds = move_seconds + self.TURNING_TIME
+        if elapsed > Duration(seconds=move_seconds):
+            return True
+        return False
 
-    # def check_forward_2_speech(self):
-    #     if self.person_size > self.HUMAN_DISTANCE:
-    #         return True
-    #     else:
-    #         return False
-        
-
-    # def check_move_left_2_spin(self):
-    #     elapsed = self.get_clock().now() - self.state_ts
-    #     return elapsed > Duration(seconds=self.TURNING_TIME + self.MOVE_LEFT_TIME)
-
-    def check_stop_2_forward(self):
-        '''
-        Add comments
-        '''
+    def check_move_red_2_stop(self):
+        # TODO
         elapsed = self.get_clock().now() - self.state_ts
-        return elapsed > Duration(seconds=2.0)
-
-
-    # def check_back_2_turn(self):
-    #     '''
-    #     Add comments
-    #     '''
-    #     elapsed = self.get_clock().now() - self.state_ts
-    #     return elapsed > Duration(seconds=self.BACKING_TIME)
-
-    # def check_turn_2_forward(self):
-    #     '''
-    #     Add comments
-    #     '''
-    #     elapsed = self.get_clock().now() - self.state_ts
-    #     return elapsed > Duration(seconds=self.TURNING_TIME)
+        move_seconds = self.FORWARD_TIME
+        if self.prev_move_state != self.MOVE_RED:
+            move_seconds = move_seconds + self.TURNING_TIME
+        if elapsed > Duration(seconds=move_seconds):
+            return True
+        return False
     
-    # def check_is_obstacle(self):
-    #     '''
-    #     Check if a certain scope in the camera is color red
-    #     '''
-    #     return False
+    def check_move_red_2_win(self):
+        # TODO
+        if self.position == self.RED_GOAL_POSITION:
+            return True
+        return False
+
+    def check_move_blue_2_win(self):
+        # TODO
+        if self.position == self.BLUE_GOAL_POSITION:
+            return True
+        return False
+
         
 
 
